@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Smart Parking Garage</title>
+		<style type="text/css">
+		  	body{
+			  	background-color: rgb(203,195,277);
+				  font-family: Comic Sans MS, Monotype Corsiva;}
+			  h1 {
+				  text-align: center;}
+		</style>
+  </head>
+    <body>
+      <h1>Smart Parking Garage</h1>
+      <h2>One of the requirements for my degree program was completing a senior design project that 
+      encompasses everything that I learned in classes throughout the years. For two semesters I worked in a group of 
+      four individuals where we created a system that could be implemented into present parking garages that would do the
+      following: </h2>
+      <ul>
+        <li>Counted the amount of vehicles in the garage.</li>
+        <li>Authenticated each driver that entered the garage.</li>
+        <li>Predicted the amount of cars that would be in the garage at certain points of the day. </li>
+      </ul>
+    </body>
+</html>
