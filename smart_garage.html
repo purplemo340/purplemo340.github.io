@@ -18,24 +18,31 @@
     <body>
       <h1>Smart Parking Garage</h1>
       <p>One of the requirements for my degree program was completing a senior design project that 
-      encompasses everything that I learned in classes throughout the years. For two semesters, I worked in a group of 
-      four individuals where we created a system that could be implemented into present-day parking garages. The system we 
-      created did the following: </p>
+      combined everything that I learned in from the program throughout the years. For two semesters, I worked in a group of 
+      four individuals where we created a system that could be implemented into present-day parking garages. We realized 
+      that modern day parking garages, especially college parking garages, needed an upgrade. With our system we 
+      tried to prevent drivers from going to a parking garage and not being able to find adequate parking when needed. 
+      The system we created did the following: </p>
       <ul>
         <li>Counted the amount of vehicles in the garage.</li>
         <li>Authenticated each driver that entered the garage.</li>
         <li>Predicted the amount of cars that would be in the garage at certain points of the day. </li>
       </ul>
-	<img src="data.jpg" alt="Image of the smart parking garage system" align="left" /> <p class="image">The image on the left is
-		the module that was created for our system. The module included two PIR sensors, two cameras, and a RFID
-		reader. These sensors were connected to a Rapberry Pi 4 to collect and output information. 
+	<img src="data.jpg" alt="Image of the smart parking garage system" align="left" /> <p class="image">The image on 
+		the left is the module that was created for our system. The module included two PIR sensors, 
+		two cameras, and a RFID reader. These sensors were connected to a Rapberry Pi 4 to collect and 
+		output the information. 
 		<h2>Sensors</h2>
 	    <ul class="image_p">
-		    <li>Cameras: Used to capture the front and bach of the vehicle to store for the proper authorities.
+		    <li>Cameras: Used to capture the front and back of the vehicle to store for the proper authorities.
 		    The images were sent to an email with the date and time that the car entered or exited the garage.</li>
 		    <li>PIR Sensors: Used to determine if the vehicle entered or exited the garage.</li>
 		    <li>RFID Reader: Each driver would have a card that would authenticate each user that comes
 		    into the garage.</li>
 	    </ul></p>
+	<h2> Data Output</h2>
+	<p>The data collected was then sent to AWS and stored in a database. The data stored in the database was 
+		then displayed on a website created for the project. The data was also displayed on an external 
+		monitor that showed the ammount of cars in the garage at the time.  </p>
     </body>
 </html>
