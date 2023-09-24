@@ -16,6 +16,8 @@
     <ul>
       <li>Javascript</li>
       <li>C#</li>
+      <li>Server/Client Communication</li>
+      <li></li>
     </ul>
     <h2>Hardware</h2>
     <ul>
@@ -23,14 +25,31 @@
       <li>Passive Buzzer</li>
       <li>LEDs</li>
       <li>Heartrate Sensor</li>
+      <li>Raspberry Pi 4</li>
     </ul>
     <h2>Goal</h2>
-    <p>Create a device that measured the heartrate of the user to 
-    determine if the heartrate has reached below a certain threshold.</p>
+    <p>In a group of three, we created a device would track wheter a user was sleeping. To do this the user's
+    heartrate was tracked to determine if it reached below a certain threshold.</p>
     <ul>
-      <li>Data Collection</li>
-      <li>Server/Client/Broker Communication</li>
-      <li>Int</li>
+      <li>Data Collection: The raspberry pi is set up as a publisher and sends data to the broker continuously. </li>
+      <li>Network Communication: Used server and client configuratons to create a publisher, subscriber, and broker 
+	      network. A Beaglebone black was used to publish or send heartrates to the broker. The broker collected the data
+      	      as well as waited for commands from the subscribers.</li>
+      <li>Interface Design: Using Microsoft Visual Studio, we created a interface that subscribers would be able to use to 
+	      send commands to the broker. The following is what the buttons did:
+	      <ul>
+		      <li>Start API: Connects the subscriber to the broker of the system. The heartrate are then
+		      plotted on the chart.</li>
+		      <li>Stop API: Disconnects the subscriber from the broker and stops plotting the heartrate
+		      on the chart. </li>
+		      <li>Stay Awake: This function will cause the buzzer to sound off if the heartrate reaches below
+		      a certain threshold. The buzzer will turn off when the heartrate reaches above the threshold. </li>
+		      <li>Wake Up:This function was used to trigger the alarm regardless of what the heartrate is. </li>
+		      <li>Sleep: When this command is sent the stay awake function turns off and the buzzer 
+		      will not turn on regardless of the heartrate. </li>
+	      </ul>
+      </li>
+      <li>Intergroup Communication: Configured the system to communicate with another group's broker. </li>
     </ul>
   </body>
 </html>
