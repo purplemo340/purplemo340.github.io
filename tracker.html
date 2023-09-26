@@ -12,7 +12,8 @@
 				border: 5px solid rgb(0, 0, 0);
 				margin: 10px 30px 10px 10px;
 			        width: 800px;
-			        height: 400px;}
+			        height: 400px;
+				text-align: center}
 		</style>
   </head>
   <body>
@@ -39,28 +40,33 @@
       <li>Raspberry Pi 4</li>
     </ul>
     <h2>Goal</h2>
-    <p>In a group of three, we created a device that would track whether a user was sleeping. To do this the user's
-    heartrate was tracked to determine if it reached below a certain threshold.</p>
+    <p>In a team of three, we developed a device aimed at monitoring a user's sleep patterns. Our approach 
+	    involved monitoring the user's heart rate to determine if it fell below a specific threshold.</p>
     <ul>
-      <li>Data Collection: The raspberry pi is set up as a publisher and sends data to the broker continuously. </li>
-      <li>Network Communication: Used server and client configuratons to create a publisher, subscriber, and broker 
-	      network. A Beaglebone black was used to publish or send heartrates to the broker. The broker collected the data
-      	      as well as waited for commands from the subscribers.</li>
-      <li>Interface Design: Using Microsoft Visual Studio, we created a interface that subscribers would be able to use to 
-	      send commands to the broker. The following is what the buttons did:
+      <li>Data Collection: We set up a Raspberry Pi as a continuous data publisher, sending information to the 
+	      broker without interruption. </li>
+      <li>Network Communication: We established a network using server and client configurations to create a 
+	      system consisting of publishers, subscribers, and a broker. To transmit heart rate data to the broker,
+	      we utilized a Beaglebone Black. The broker not only collected this data but also awaited instructions
+	      from the subscribers.</li>
+      <li>Interface Design: Using Microsoft Visual Studio, we designed an interface that allowed subscribers to
+	      interact with the broker. The interface included the following functionalities:
 	      <ul>
-		      <li>Start API: Connects the subscriber to the broker of the system. The heartrate are then
-		      plotted on the chart.</li>
-		      <li>Stop API: Disconnects the subscriber from the broker and stops plotting the heartrate
-		      on the chart. </li>
-		      <li>Stay Awake: This function will cause the buzzer to sound off if the heartrate reaches below
-		      a certain threshold. The buzzer will turn off when the heartrate reaches above the threshold. </li>
-		      <li>Wake Up:This function was used to trigger the alarm regardless of what the heartrate is. </li>
-		      <li>Sleep: When this command is sent the stay awake function turns off and the buzzer 
-		      will not turn on regardless of the heartrate. </li>
+		      <li>Start API: This button connected the subscriber to the system's broker, enabling the 
+			      real-time plotting of heart rate data on a chart.</li>
+		      <li>Stop API: Clicking this button disconnected the subscriber from the broker and halted 
+			      the plotting of heart rate data on the chart. </li>
+		      <li>Stay Awake: Activating this function triggered the buzzer if the user's heart rate dropped
+			      below a specified threshold. The buzzer ceased when the heart rate returned above the 
+			      threshold. </li>
+		      <li>Wake Up: This function was employed to activate the alarm, irrespective of the user's 
+			      heart rate. </li>
+		      <li>Sleep: Sending this command turned off the Stay Awake function, preventing the
+			      buzzer from sounding, regardless of the user's heart rate. </li>
 	      </ul>
       </li>
-      <li>Intergroup Communication: Configured the system to communicate with another group's broker.  </li>
+      <li>Intergroup Communication: We configured the system to communicate with another group's broker, 
+	      facilitating seamless interaction and data exchange between our systems. </li>
     </ul>
   </body>
 </html>
