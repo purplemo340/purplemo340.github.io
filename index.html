@@ -49,6 +49,18 @@
 				height: 200px;
 				width: 400px;
 			}
+			.btn:hover {
+    				cursor: pointer;
+    				box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    				transform: translateY(-0.1rem);
+    				transition: transform 150ms;
+  			}
+  
+  			.btn[disabled]:hover {
+    				cursor: not-allowed;
+    				box-shadow: none;
+    				transform: none;
+  			}
 			
 				
 		</style>
@@ -67,13 +79,13 @@
 			projects that showcase my skills. Click on each link below to learn more. </p>
 		<h2> Projects </h2>
 		<ul>
-			<li> <a href="handwriting.html">Handwriting Recognition</a></li>
-			<li><a href="smart_garage.html">Smart Parking Garage</a></li>
-			<!--<li><a href="servo_game.html">Servo Motor Guessing Game</a></li>-->
-			<li><a href="tracker.html">Sleep Tracker</a></li>
-			<li><a href="detection">Blind Detection Device</a></li>
-			<!--<li><a href="website">Personal Website(In Progress)</a></li>-->
-			<li>Personal Website(In Progress)</li>
+			<li> <a class='btn' href="handwriting.html">Handwriting Recognition</a></li>
+			<li><a class='btn' href="smart_garage.html">Smart Parking Garage</a></li>
+			<!--<li><a class='btn' href="servo_game.html">Servo Motor Guessing Game</a></li>-->
+			<li><a class='btn'href="tracker.html">Sleep Tracker</a></li>
+			<li><a class='bth'href="detection">Blind Detection Device</a></li>
+			<!--<li><a class='btn'href="website">Personal Website(In Progress)</a></li>-->
+			<li>class='btn' Personal Website(In Progress)</li>
 		</ul>
 		<h2>Relevant Classes</h2>
 		<ul>
