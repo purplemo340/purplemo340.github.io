@@ -3,9 +3,15 @@
 	<head>
 		<title>My Webpage</title>
 		<style type="text/css">
+			* {
+  box-sizing: border-box;
+}
 			body{
 				background-color: rgb(8,198,208);
-				font-family: Comic Sans MS, Monotype Corsiva;}
+				font-family: Comic Sans MS, Monotype Corsiva;
+				background-image:url("W098.jpg");
+				background-size:cover;
+			}
 			h1 {
 				text-align: center;
 				border: solid 5px rgb(52,24,65);
@@ -13,39 +19,111 @@
 				width: 500px;
 				margin: 10px auto 10px auto;
 			}
+			h2{
+				background-color: rgb(10,148,178);
+				border-radius: 10px;
+				width: 200px; 
+				padding-right: 60%;
+			}
+		
 			video{
 				float: left;
-				margin: 10px 30px 10px 10px;}
+				background-color: aqua;
+				border-radius: 10px;
+			}
+			.header{
+				
+				background-color:rgb(10,148,178);
+				border-radius: 10px;
+				border-bottom: 5px solid black;
+			}
+			h2::after{
+				content: "";
+  display: table;
+  clear: both;
+			}
+			.description{
+				float: right;
+				background-color: rgb(8,198,208);
+				
+				
+			}
+			.title{
+				float: left;
+				width:200px;
+			}
+			.column {
+  				float: left;
+  				padding: 10px;
+			}
+			.column.left{
+				width:70%
+			}
+			.column.side{
+				width:30%
+			}
+			.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		
+			@media screen and (max-width: 600px) {
+  				.column.side, .column.middle {
+   					 width: 100%;
+  				}
+			}
 		</style>
 	</head>
 	<body>
-		
-		<h1>Handwriting Recognition Project</h1>
-		<video width="500px" height="300px" controls="controls">
-        		<source src="20221208_184013 (1) - Trim.mp4" type="video/mp4" align="left"/>
-		</video>
-		<h2>Skills</h2>
-		<ul>
-			<li>Python</li> 
-			<li>Pandas</li> 
-			<li>Keras</li>
-		</ul>
-		<h2>Hardware</h2>
-		<ul>
-			<li>Raspberry Pi 4</li>
-			<li>Raspberry Pi Camera</li>
-			<li>Raspberry Pi Sensehat</li>
-		</ul>
-		<h2>Goal</h2>
-		<p>For this project the goal was to capture images that would be able to accurately show the user
-		the number that is displayed on a piece of paper. The system could do the following:</p>
-		<ul>
-			<li>Image Capturing: The system integrated a Raspberry Pi camera that was used to capture
-			images on a piece of paper. </li>
-			<li>Image Analysis: Using python, machine learning is used to pinpoint the most important parts 
-			of the images to help determine what number is written in the image.</li>
-			<li>Data Vizualization: After determining what the number in the image is, the number is 
-			displayed on the Raspberry Pi Sensehat. </li>
-		</ul>
+		<div class="container">
+			<div class="header">
+				<h1>Handwriting Recognition Project</h1>
+			</div>
+			<div class="content">
+				<!--<div class="description">
+					This project inspired me to learn more about machine
+					learning principles. I enjoyed trying analyzing the 
+					data in order to get better results. -->
+				<div class="row">
+				<div class= "column left">
+					<h2 class="title"> Demonstration</h1>
+					<video width="500px" title="Demonstration" height="300px" controls="controls">
+        				<source src="20221208_184013 (1) - Trim.mp4" type="video/mp4" align="left"/>
+					</video>
+				</div>
+				<div class="column side">
+					<h2>Skills</h2>
+					<ul>
+						<li>Python</li> 
+						<li>Pandas</li> 
+						<li>Keras</li>
+						<li>Machine Learning</li>
+
+					</ul>
+			
+					<h2>Hardware</h2>
+					<ul>
+						<li>Raspberry Pi 4</li>
+						<li>Raspberry Pi Camera</li>
+						<li>Raspberry Pi Sensehat</li>
+					</ul>
+				</div>
+				</div>
+				<div class="footer">
+					<h2 class="foot">Goal</h2>
+					<p>For this project the goal was to capture images that would be able to accurately show the user
+					the number that is displayed on a piece of paper. The system could do the following:</p>
+					<ul>
+						<li>Image Capturing: The system integrated a Raspberry Pi camera that was used to capture
+						images on a piece of paper. </li>
+						<li>Image Analysis: Using python, machine learning is used to pinpoint the most important parts 
+						of the images to help determine what number is written in the image.</li>
+						<li>Data Vizualization: After determining what the number in the image is, the number is 
+						displayed on the Raspberry Pi Sensehat. </li>
+					</ul>
+				</div>
+		</div>
   </body>
+</div>
 </html>
