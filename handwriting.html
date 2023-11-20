@@ -2,78 +2,7 @@
 <html>
 	<head>
 		<title>My Webpage</title>
-		<style type="text/css">
-			* {
-  box-sizing: border-box;
-}
-			body{
-				background-color: rgb(8,198,208);
-				font-family: Comic Sans MS, Monotype Corsiva;
-				background-image:url("W098.jpg");
-				background-size:cover;
-			}
-			h1 {
-				text-align: center;
-				border: solid 5px rgb(52,24,65);
-				border-radius: 10px;
-				width: 500px;
-				margin: 10px auto 10px auto;
-			}
-			h2{
-				background-color: rgb(10,148,178);
-				border-radius: 10px;
-				width: 200px; 
-				padding-right: 60%;
-			}
-		
-			video{
-				float: left;
-				background-color: aqua;
-				border-radius: 10px;
-			}
-			.header{
-				
-				background-color:rgb(10,148,178);
-				border-radius: 10px;
-				border-bottom: 5px solid black;
-			}
-			h2::after{
-				content: "";
-  display: table;
-  clear: both;
-			}
-			.description{
-				float: right;
-				background-color: rgb(8,198,208);
-				
-				
-			}
-			.title{
-				float: left;
-				width:200px;
-			}
-			.column {
-  				float: left;
-  				padding: 10px;
-			}
-			.column.left{
-				width:70%
-			}
-			.column.side{
-				width:30%
-			}
-			.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-		
-			@media screen and (max-width: 600px) {
-  				.column.side, .column.middle {
-   					 width: 100%;
-  				}
-			}
-		</style>
+		<link rel="stylesheet" href="app.css"/>
 	</head>
 	<body>
 		<div class="container">
@@ -92,7 +21,7 @@
         				<source src="20221208_184013 (1) - Trim.mp4" type="video/mp4" align="left"/>
 					</video>
 				</div>
-				<div class="column side">
+				<div class="column right">
 					<h2>Skills</h2>
 					<ul>
 						<li>Python</li> 
