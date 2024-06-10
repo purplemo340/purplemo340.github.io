@@ -41,7 +41,8 @@
 				border-radius: 10px;
 				border-bottom: 5px solid black;
 			}
-			h2::after{
+			
+			h2{
 				content: "";
   				display: table;
   				clear: both;
