@@ -47,7 +47,14 @@
   				display: table;
   				clear: both;
 			}
-			
+			p{
+				background:rgb(255,255,255);
+				opacity:0.75;
+			}
+			ul{
+				background:rgb(255,255,255);
+				opacity:0.75;
+			}
 			.description{
 				float: right;
 				background-color: rgb(8,198,208);
