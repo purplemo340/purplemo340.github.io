@@ -1,25 +1,36 @@
 * {
   box-sizing: border-box;
 }
+:root{
+	--bs-navy:#071952;
+	--bs-teal:#088395;
+	--bs-light-teal:#37B7C3;
+	--bs-light-blue:#EBF4F6;
+}
 			body{
-				background-color: rgb(8,198,208);
+				background-color: var(--bs-teal);
 				font-family: Comic Sans MS, Monotype Corsiva;
-				background-image:url("W098.jpg");
-				background-size:cover;
+				background-image:url("background image.jpg");
+				
 			}
 			h1 {
 				text-align: center;
-				border: solid 5px rgb(52,24,65);
+				
 				border-radius: 10px;
 				width: 500px;
+				background: var(--bs-teal);
+				color:var(--bs-light-blue);
 				margin: 10px auto 10px auto;
 			}
 			h2{
-				background-color: rgb(10,148,178);
+				background-color: var(--bs-light-teal);
 				border-radius: 10px;
-				width: 200px; 
-				padding-right: 60%;
-				padding-left: 10px;
+				width: 400px; 
+				text-align: center;
+				border: solid var(--bs-navy) 2px;
+				opacity:0.75;
+				margin: 10px auto 10px auto;
+				color:var(--bs-light-mint);
 			}
 			img{
 				border: 5px solid rgb(0, 0, 0);
@@ -86,3 +97,66 @@
    					 width: 100%;
   				}
 			}
+			
+			
+			#clock{
+				font: bold 24px sans serif;
+				background: var(--bs-light-blue);
+				padding: 15px;
+				border: solid black 2px;
+				border-radius: 10px;
+			}
+			p{
+				background:var(--bs-light-blue);
+				opacity:0.75;
+			}
+			ul{
+				background:rgb(255,255,255);
+				opacity:0.75;
+			}
+			
+			img{
+				border: 5px solid rgb(0, 0, 0);
+				margin: 10px 30px 10px 10px;
+				height: 200px;
+				width: 400px;
+			}
+			.btn {
+    				font-size: 18px;
+            
+            			width: 300px;
+            			height: 25px;
+				padding:1px;
+            			text-align: center;
+            			border: 0.1rem solid var(--bs-navy);
+            			margin-bottom: 1rem;
+            			text-decoration: none;
+            			color: var(--bs-teal);
+            			background-color: var(--bs-light-blue);
+  }
+			
+			.btn:hover {
+    				cursor: pointer;
+    				box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    				transform: translateY(-0.1rem);
+    				transition: transform 150ms;
+  			}
+  
+  			.btn[disabled]:hover {
+    				cursor: not-allowed;
+    				box-shadow: none;
+    				transform: none;
+  			}
+			.projects{
+				height:180px;
+			}
+			 .flex-column {
+    				display: flex;
+    				flex-direction: column;
+  			}
+  
+  			.flex-center {
+    				justify-content: center;
+    				align-items: center;
+  			}
+			
