@@ -31,7 +31,40 @@
 				opacity:0.75;
 				margin: 10px auto 10px auto;
 				color:var(--bs-light-mint);
+				content: "";
+  				display: table;
+  				clear: both;
 			}
+			.btns {
+				font-size: 18px;
+		
+				width: 300px;
+				height: 25px;
+				padding:1px;
+				text-align: center;
+				border: 0.1rem solid var(--bs-navy);
+				margin-bottom: 1rem;
+				text-decoration: none;
+				color: var(--bs-light-blue);
+				background-color: var(--bs-light-teal);
+				
+}
+		
+		.btns:hover {
+				cursor: pointer;
+				box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+				transform: translateY(-0.1rem);
+				transition: transform 150ms;
+		  }
+
+		  .btns[disabled]:hover {
+				cursor: not-allowed;
+				box-shadow: none;
+				transform: none;
+		  }
+		  button{
+			background-color: var(--bs-light-teal);
+		  }
 			img{
 				border: 5px solid rgb(0, 0, 0);
 				margin: 10px 30px 10px 10px;}
@@ -53,11 +86,6 @@
 				border-bottom: 5px solid black;
 			}
 			
-			h2{
-				content: "";
-  				display: table;
-  				clear: both;
-			}
 			p{
 				background:rgb(255,255,255);
 				opacity:0.75;
@@ -106,10 +134,7 @@
 				border: solid black 2px;
 				border-radius: 10px;
 			}
-			p{
-				background:var(--bs-light-blue);
-				opacity:0.75;
-			}
+			
 			ul{
 				background:rgb(255,255,255);
 				opacity:0.75;
@@ -121,32 +146,7 @@
 				height: 200px;
 				width: 400px;
 			}
-			.btn {
-    				font-size: 18px;
-            
-            			width: 300px;
-            			height: 25px;
-				padding:1px;
-            			text-align: center;
-            			border: 0.1rem solid var(--bs-navy);
-            			margin-bottom: 1rem;
-            			text-decoration: none;
-            			color: var(--bs-teal);
-            			background-color: var(--bs-light-blue);
-  }
 			
-			.btn:hover {
-    				cursor: pointer;
-    				box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    				transform: translateY(-0.1rem);
-    				transition: transform 150ms;
-  			}
-  
-  			.btn[disabled]:hover {
-    				cursor: not-allowed;
-    				box-shadow: none;
-    				transform: none;
-  			}
 			.projects{
 				height:180px;
 			}
