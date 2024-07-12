@@ -18,7 +18,7 @@
 				
 				border-radius: 10px;
 				width: 500px;
-				background: var(--bs-teal);
+				background: var(--bs-light-teal);
 				color:var(--bs-light-blue);
 				margin: 10px auto 10px auto;
 			}
