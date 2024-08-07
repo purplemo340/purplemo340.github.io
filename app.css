@@ -1,79 +1,89 @@
-* {
-  box-sizing: border-box;
-}
-:root{
-	--bs-navy:#071952;
-	--bs-teal:#088395;
-	--bs-light-teal:#37B7C3;
-	--bs-light-blue:#EBF4F6;
-}
-			body{
-				background-color: var(--bs-teal);
-				font-family: Comic Sans MS, Monotype Corsiva;
-				background-image:url("background image.jpg");
-				
-			}
-			h1 {
-				text-align: center;
-				
-				border-radius: 10px;
-				width: 500px;
-				background: var(--bs-light-teal);
-				color:var(--bs-light-blue);
-				margin: 10px auto 10px auto;
-			}
-			h2{
-				background-color: var(--bs-light-teal);
-				border-radius: 10px;
-				width: 400px; 
-				text-align: center;
-				border: solid var(--bs-navy) 2px;
-				opacity:0.75;
-				margin: 10px auto 10px auto;
-				color:var(--bs-light-mint);
-				content: "";
-  				display: table;
-  				clear: both;
-			}
-			.btns {
-				font-size: 18px;
-		
-				width: 300px;
-				height: 25px;
-				padding:1px;
-				text-align: center;
-				border: 0.1rem solid var(--bs-navy);
-				margin-bottom: 1rem;
-				text-decoration: none;
-				color: var(--bs-light-blue);
-				background-color: var(--bs-light-teal);
-				
-}
-		
-		.btns:hover {
-				cursor: pointer;
-				box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-				transform: translateY(-0.1rem);
-				transition: transform 150ms;
-		  }
 
-		  .btns[disabled]:hover {
-				cursor: not-allowed;
-				box-shadow: none;
-				transform: none;
+:root{
+	--bs-navy:#234152;
+	--bs-teal:#097f93;
+	--bs-light-teal:#097f93;
+	--bs-light-blue:#08c6d0;
+	--bs-blue:#0a94b2;
+	--bs-white:#e2d2db;
+	--bs-dark-purple:#341841;
+	--bs-grey:#292821;
+	--bs-light-purple:#5f284d;
+	--bs-purple:#473551;
+
+}
+* {
+	box-sizing: border-box;
+	background-color: #473551;
+   
+  }
+.index-header{
+	color:var(--bs-white);
+}
+.nav-1{
+	color:var(--bs-white);
+}
+body{
+	font-family: Comic Sans MS, Monotype Corsiva;
+	/* background-image:url("background image.jpg"); */
+	background-color: var(--bs-light-purple);
+	}
+h1 {
+	text-align: center;
+	border-radius: 10px;
+	width: 500px;
+	background-color: var(--bs-light-teal);
+	margin: 10px auto 10px auto;
+	}
+h2{
+	background-color: var(--bs-light-teal);
+	border-radius: 10px;
+	width: 400px; 
+	text-align: center;
+	border: solid var(--bs-navy) 2px;
+	margin: 10px auto 10px auto;
+	color:var(--bs-light-mint);
+	display: table;
+  	clear: both;
+			}
+
+.btns {
+	font-size: 18px;
+	width: 300px;
+	height: 25px;
+	text-align: center;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: var(--bs-white);
+	background-color: var(--bs-light-teal);
+				
+}
+.btns:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
 		  }
-		  button{
-			background-color: var(--bs-light-teal);
-		  }
-			img{
-				border: 5px solid rgb(0, 0, 0);
-				margin: 10px 30px 10px 10px;}
-			.img_keep{
-					border: 5px solid rgb(0, 0, 0);
-					margin: 10px 30px 10px 10px;
-						width: 700px;
-						height: 400px;
-					text-align: center;}
+.btns[disabled]:hover {
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+	}
+button{
+	background-color: var(--bs-light-teal);
+		}
+img{
+	border: 5px solid rgb(0, 0, 0);
+	margin: 10px 30px 10px 10px;
+	height: 200px;
+	width: 400px;
+}
+.img_keep{
+	border: 5px solid rgb(0, 0, 0);
+	margin: 10px 30px 10px 10px;
+	width: 700px;
+	height: 400px;
+	text-align: center;}
 			video{
 				float: left;
 				background-color: aqua;
@@ -86,14 +96,6 @@
 				border-bottom: 5px solid black;
 			}
 			
-			p{
-				background:rgb(255,255,255);
-				opacity:0.75;
-			}
-			ul{
-				background:rgb(255,255,255);
-				opacity:0.75;
-			}
 			.description{
 				float: right;
 				background-color: rgb(8,198,208);
@@ -135,18 +137,6 @@
 				border-radius: 10px;
 			}
 			
-			ul{
-				background:rgb(255,255,255);
-				opacity:0.75;
-			}
-			
-			img{
-				border: 5px solid rgb(0, 0, 0);
-				margin: 10px 30px 10px 10px;
-				height: 200px;
-				width: 400px;
-			}
-			
 			.projects{
 				height:180px;
 			}
@@ -159,4 +149,11 @@
     				justify-content: center;
     				align-items: center;
   			}
+			.head{
+				background-image: url("background image.jpg");
+
+			}
+			ul{
+				color:#e2d2db;
+			}
 			
