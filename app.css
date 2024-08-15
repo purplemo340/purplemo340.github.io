@@ -21,7 +21,7 @@
 	color:var(--bs-white);
 }
 .nav-1{
-	color:var(--bs-white);
+	color:var(--bs-purple);
 }
 body{
 	font-family: Comic Sans MS, Monotype Corsiva;
@@ -48,6 +48,17 @@ h2{
 	display: table;
   	clear: both;
 			}
+h3{
+	background-color: var(--bs-light-teal);
+	border-radius: 10px;
+	width: 400px; 
+	text-align: center;
+	border: solid var(--bs-navy) 2px;
+	margin: 10px auto 10px auto;
+	color:var(--bs-light-mint);
+	display: table;
+  	clear: both;
+}
 
 .btns {
 	font-size: 18px;
@@ -80,6 +91,12 @@ img{
 	height: 200px;
 	width: 400px;
 }
+.img_crochet{
+	height: 400px;
+	
+	
+}
+
 p{
 	font-size: 18px;
 }
@@ -89,7 +106,7 @@ a{
 .img_keep{
 	border: 5px solid rgb(0, 0, 0);
 	margin: 10px 30px 10px 10px;
-	width: 700px;
+	width: 600px;
 	height: 400px;
 	text-align: center;}
 video{
@@ -119,9 +136,9 @@ video{
 .column.left{
 	width:60%
 	}
-			.column.right{
-				width:40%
-			}
+.column.right{
+	width:40%
+}
 			.row::after {
   				content: "";
   				display: table;
@@ -152,6 +169,7 @@ video{
   			}
   
   			.flex-center {
+					display: flex;
     				justify-content: center;
     				align-items: center;
   			}
