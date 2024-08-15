@@ -34,7 +34,9 @@ h1 {
 	width: 500px;
 	background-color: var(--bs-light-teal);
 	margin: 10px auto 10px auto;
+	
 	}
+
 h2{
 	background-color: var(--bs-light-teal);
 	border-radius: 10px;
@@ -53,7 +55,7 @@ h2{
 	height: 25px;
 	text-align: center;
 	margin-bottom: 1rem;
-	text-decoration: none;
+	
 	color: var(--bs-white);
 	background-color: var(--bs-light-teal);
 				
@@ -78,41 +80,45 @@ img{
 	height: 200px;
 	width: 400px;
 }
+p{
+	font-size: 18px;
+}
+a{
+	
+}
 .img_keep{
 	border: 5px solid rgb(0, 0, 0);
 	margin: 10px 30px 10px 10px;
 	width: 700px;
 	height: 400px;
 	text-align: center;}
-			video{
-				float: left;
-				background-color: aqua;
-				border-radius: 10px;
-			}
-			.header{
+video{
+	float: left;
+	background-color: aqua;
+	border-radius: 10px;
+	}
+.header{
 				
-				background-color:rgb(10,148,178);
-				border-radius: 10px;
-				border-bottom: 5px solid black;
-			}
+	background-color:rgb(10,148,178);
+	border-radius: 10px;
+	border-bottom: 5px solid black;
+	}
 			
-			.description{
-				float: right;
-				background-color: rgb(8,198,208);
-				
-				
-			}
-			.title{
-				float: left;
-				width:200px;
-			}
-			.column {
-  				float: left;
-  				padding: 10px;
-			}
-			.column.left{
-				width:60%
-			}
+.description{
+	float: right;
+	background-color: rgb(8,198,208);
+		}
+.title{
+	float: left;
+	width:200px;
+		}
+.column {
+  	float: left;
+  	padding: 10px;
+	}
+.column.left{
+	width:60%
+	}
 			.column.right{
 				width:40%
 			}
